@@ -21,4 +21,4 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: 2228
         script: |
-            echo "test!"
+            ls
