@@ -21,4 +21,5 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: 2228
         script: |
+            cd /opt/ml
             git clone https://github.com/HYU-kbs/streamlit_test
