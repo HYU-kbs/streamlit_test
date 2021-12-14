@@ -24,5 +24,7 @@ jobs:
             kill -9 $(ps -A | grep python | awk '{print $1}')
             cd /opt/ml/final-project/
             git pull origin Integrated
+            cd SuperResolution
+            python Server.py
             
     
