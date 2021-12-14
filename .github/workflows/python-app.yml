@@ -21,7 +21,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: 2228
         script: |
-            ps aux | grep Server.py | awk '{print $2}' | xargs kill -9
+            kill -9 $(ps -A | grep python | awk '{print $1}')
             cd /opt/ml/final-project/
             git pull origin Integrated
             
